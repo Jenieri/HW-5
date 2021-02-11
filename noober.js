@@ -69,5 +69,39 @@ function renderRides(ridesArray) {
 
 window.addEventListener('DOMContentLoaded', function() {
   // YOUR CODE
-})
 
+let allRidesButton = document.querySelector('#all-filter')
+allRidesButton.addEventListener('click', async function(event){
+  event.preventDefault()
+  let filterReset = document.querySelector('#filter')
+  filterReset.innerHTML = ' '
+
+  let nooberpurplebutton =  document.querySelector('#noober-purple-filter')
+  nooberpurplebutton.addEventListener('click', async function(event){
+  event.preventDefault()
+    let filterReset = document.querySelector('#filter')
+    filterReset.innerHTML = ''
+  console.log("Noober Purple button was clicked")
+
+  let nooberpoolbutton =  document.querySelector('#noober-pool-filter')
+  nooberpoolbutton.addEventListener('click', async function(event){
+  event.preventDefault()
+    let filterReset = document.querySelector('#filter')
+    filterReset.innerHTML = ''
+  console.log("Noober Pool button was clicked")
+
+  let nooberxlbutton =  document.querySelector('#noober-xl-filter')
+  nooberxlbutton.addEventListener('click', async function(event){
+  event.preventDefault()
+    let filterReset = document.querySelector('#filter')
+    filterReset.innerHTML = ''
+  console.log("Noober XL button was clicked")
+
+  let nooberxbutton =  document.querySelector('#noober-x-filter')
+  nooberxbutton.addEventListener('click', async function(event){
+  event.preventDefault()
+    let filterReset = document.querySelector('#filter')
+    filterReset.innerHTML = ''
+  console.log("Noober X button was clicked")
+}}})
+  
